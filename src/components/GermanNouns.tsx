@@ -8,7 +8,7 @@ type Noun = {
 
 type Props = {
   article: string;
-}
+};
 
 function shuffle(array: any[]) {
   let currentIndex = array.length,
@@ -32,15 +32,23 @@ const GermanNouns = ({ article }: Props) => {
   return (
     <>
       <h2>German Nouns</h2>
-      <p>There are {nouns.length} German Nouns ({article}).</p>
+      <h3>
+        There are {nouns.length} German Nouns ({article}).
+      </h3>
       <div className="nouns">
         {nouns.map((noun: Noun) => {
           return (
-            <div className="noun">
-              <div className="singular">
-                {noun.article} {noun.singular}
+            <div className="container">
+              <div className="card">
+                <div className="card-back">
+                  <div>{noun.plural}</div>
+                </div>
+                <div className="card-front">
+                  <div>
+                    {noun.article} {noun.singular}
+                  </div>
+                </div>
               </div>
-              <div className="plural">{noun.plural}</div>
             </div>
           );
         })}

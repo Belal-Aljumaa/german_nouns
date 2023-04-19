@@ -6,7 +6,9 @@ function App() {
     <div>
       <h1>Test Site</h1>
       <GermanNouns article="der"/>
+      <hr/>
       <GermanNouns article="die"/>
+      <hr/>
       <GermanNouns article="das"/>
     </div>
   );
