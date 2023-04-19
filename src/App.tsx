@@ -1,9 +1,13 @@
 import './App.scss';
+import GermanNouns from './components/GermanNouns';
 
 function App() {
   return (
     <div>
-
+      <h1>Test Site</h1>
+      <GermanNouns article="der"/>
+      <GermanNouns article="die"/>
+      <GermanNouns article="das"/>
     </div>
   );
 }
