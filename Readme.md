@@ -52,7 +52,7 @@ To use this project locally, you need to follow the commands below:
 4. Start local server:
 
    ```bash
-   npm run build
+   npm run dev
    ```
 
 5. Open [http://localhost:5173](http://localhost:3333) to view it in your browser.
